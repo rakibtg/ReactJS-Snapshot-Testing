@@ -1,23 +1,20 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import Items from './items/Items'
+
+const itemsArray = [
+  'Sun', 'Earth', 'Moon', 'Saturn'
+]
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <h1>Learn Snapshot Testing</h1>
+        <Items items={itemsArray} />
+        <h3>
+          Subscribe and follow @rakibtg
+        </h3>
       </header>
     </div>
   );
